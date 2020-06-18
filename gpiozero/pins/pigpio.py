@@ -110,10 +110,9 @@ class PiGPIOFactory(PiFactory):
     def __init__(self, host=None, port=None):
         super(PiGPIOFactory, self).__init__()
         if host is None:
-            host = os.environ.get('PIGPIO_ADDR', 'localhost')
+            host = '192.168.1.55'
         if port is None:
-            # XXX Use getservbyname
-            port = int(os.environ.get('PIGPIO_PORT', 8888))
+            port = '8888'
         self.pin_class = PiGPIOPin
         self.spi_classes = {
             ('hardware', 'exclusive'): PiGPIOHardwareSPI,
