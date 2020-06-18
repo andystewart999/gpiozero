@@ -23,7 +23,7 @@ try:
 except ImportError:
     pass
 
-__project__      = 'gpiozero'
+__project__      = 'gpiozero_ha'
 __version__      = '1.5.1'
 __author__       = 'Ben Nuttall'
 __author_email__ = 'ben@bennuttall.com'
