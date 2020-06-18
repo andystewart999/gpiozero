@@ -270,7 +270,7 @@ class Device(ValuesMixin, GPIOBase):
             ('pigpio',  'gpiozero.pins.pigpio:PiGPIOFactory'),
             ('native',  'gpiozero.pins.native:NativeFactory'),
         ))
-        name = os.environ.get('GPIOZERO_PIN_FACTORY')
+        name = 'pigpio'
         if name is None:
             # If no factory is explicitly specified, try various names in
             # "preferred" order. For speed, we select from the dictionary above
