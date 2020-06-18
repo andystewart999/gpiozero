@@ -2,21 +2,7 @@
 gpiozero
 ========
 
-.. image:: https://badge.fury.io/gh/gpiozero%2Fgpiozero.svg
-    :target: https://badge.fury.io/gh/gpiozero%2Fgpiozero
-    :alt: Source code on GitHub
-
-.. image:: https://badge.fury.io/py/gpiozero.svg
-    :target: https://badge.fury.io/py/gpiozero
-    :alt: Latest Version
-
-.. image:: https://travis-ci.org/gpiozero/gpiozero.svg?branch=master
-    :target: https://travis-ci.org/gpiozero/gpiozero
-    :alt: Build Tests
-
-.. image:: https://img.shields.io/codecov/c/github/gpiozero/gpiozero/master.svg?maxAge=2592000
-    :target: https://codecov.io/github/gpiozero/gpiozero
-    :alt: Code Coverage
+Note: this fork of gpiozero has been created purely to work around a 'cannot find default pin factory' issue with Home Assistant.  It's like using a hammer to crack a nut, but it's the only option to avoid having to manually edit the Home Assistant container and modify 'devices.py' after each update.
 
 A simple interface to GPIO devices with Raspberry Pi.
 
