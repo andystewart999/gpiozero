@@ -394,8 +394,9 @@ class HoldMixin(EventsMixin):
         super(HoldMixin, self).close()
 
     def _fire_activated(self):
-        super(HoldMixin, self)._fire_activated()
-        self._hold_thread.holding.set()
+        if sef._hold_thread is not None:
+            super(HoldMixin, self)._fire_activated()
+            self._hold_thread.holding.set()
 
     def _fire_deactivated(self):
         self._held_from = None
